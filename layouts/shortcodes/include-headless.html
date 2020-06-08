@@ -1,0 +1,7 @@
+{{/* For details on using this shortcode, see /content/headless/README.md */}}
+{{ $file := .Get 0 }}
+{{ $path := .Site.GetPage "/headless/index.md" }}
+{{ $reusablePages := $path.Resources.Match $file }}
+{{ range $reusablePages }}
+    {{- .Content }}
+{{ end }}

@@ -1,0 +1,1 @@
+This product is called {{< param ".Page.Params.productname" >}}
